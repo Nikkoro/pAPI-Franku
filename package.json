@@ -1,0 +1,34 @@
+{
+    "name": "papi-franku",
+    "version": "1.0.0",
+    "description": "Iconic quotes straight from the Omniverse, now avaiable through pAPI Franku!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nikkoro/pAPI-Franku.git"
+    },
+    "keywords": [
+        "filthy",
+        "frank",
+        "pinkguy",
+        "chinchin",
+        "wheelz",
+        "salamanderman"
+    ],
+    "author": "nikko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Nikkoro/pAPI-Franku/issues"
+    },
+    "homepage": "https://github.com/Nikkoro/pAPI-Franku#readme",
+    "dependencies": {
+        "express": "^4.17.3"
+    },
+    "engines": {
+        "node": "16.14.0"
+    }
+}
