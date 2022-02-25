@@ -1,13 +1,14 @@
 const express = require("express");
 const app = express();
+
 const importData = require("./quotes.json");
 let port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
+app.get("/", cors(), (req, res) => {
     res.send("pAPI Franku");
 });
 
-app.get("/omniverse", (req, res) => {
+app.get("/omniverse", cors(), (req, res) => {
     res.send(importData);
 });
 
