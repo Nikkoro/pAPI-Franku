@@ -9,11 +9,11 @@ const app = express();
 const importData = require("./quotes.json");
 let port = process.env.PORT || 3000;
 
-app.get("/", cors(), (req, res) => {
+app.get("/", cors(corsSettings), (req, res) => {
     res.send("pAPI Franku");
 });
 
-app.get("/omniverse", cors(), (req, res) => {
+app.get("/omniverse", cors(corsSettings), (req, res) => {
     res.send(importData);
 });
 
