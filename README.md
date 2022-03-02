@@ -1,21 +1,3 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-    body {
-        font-family: 'Roboto Mono', monospace;
-    }
-    pre {
-        display: inline-block;
-        background-color: #f8f8f8;
-        border: 1px solid #acaaaa;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        margin-right: 1.5em;
-        padding: 0.125rem 0.3125rem 0.0625rem;
-         }
-
-}
-</style>
-
 # pAPI-Franku
 
 API for getting quotes from the Filthy Frank Omniverse
