@@ -10,16 +10,34 @@ const importData = require("./quotes.json");
 
 let port = process.env.PORT || 3000;
 
-app.get("/", cors(corsSettings), (req, res) => {
+app.use(cors(corsSettings));
+
+app.get("/", (req, res) => {
     res.send("pAPI Franku");
 });
 
-app.get("/quotes", cors(corsSettings), (req, res) => {
-    res.send(importData);
+// all quotes
+app.get("/api/quotes/", (req, res) => {
+    res.send(importData.results);
 });
 
-app.get("/quote", cors(corsSettings), (req, res) => {
-    const randomQuote = importData[Math.round(Math.random() * 50)];
+//get quote by id
+app.get("/api/quotes/:id", (req, res) => {
+    const { id } = req.params;
+    const data = importData.results.filter((x) => x.id === parseInt(id));
+    res.send(data);
+});
+
+//get quotes by author
+app.get("/api/quotes/author/:author", (req, res) => {
+    const { author } = req.params;
+    const data = importData.results.filter((x) => x.author === author);
+    res.send(data);
+});
+
+// get random quote
+app.get("/api/quote", (req, res) => {
+    const randomQuote = importData.results[Math.round(Math.random() * 100)];
     res.send(randomQuote);
 });
 
