@@ -7,13 +7,17 @@ const corsSettings = {
 };
 const app = express();
 const importData = require("./quotes.json");
+const md = require("markdown-it")();
+const fs = require("fs");
 
 let port = process.env.PORT || 3000;
 
 app.use(cors(corsSettings));
 
 app.get("/", (req, res) => {
-    res.send("pAPI Franku");
+    const str = fs.readFileSync("README.md", "utf8");
+    const result = md.render(str);
+    res.send(result);
 });
 
 // all quotes
