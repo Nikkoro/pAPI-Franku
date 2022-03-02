@@ -7,16 +7,16 @@ const corsSettings = {
 };
 const app = express();
 const importData = require("./quotes.json");
-const md = require("markdown-it")();
 const fs = require("fs");
-
+const showdown = require("showdown");
 let port = process.env.PORT || 3000;
 
 app.use(cors(corsSettings));
 
 app.get("/", (req, res) => {
     const str = fs.readFileSync("README.md", "utf8");
-    const result = md.render(str);
+    converter = new showdown.Converter();
+    const result = converter.makeHtml(str);
     res.send(result);
 });
 
