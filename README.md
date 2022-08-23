@@ -2,6 +2,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
     body {
         font-family: 'Roboto Mono', monospace;
+        display: grid;
+        max-width: max-content;
+        margin: auto;
     }
     pre {
         display: inline-block;
@@ -46,11 +49,11 @@ Example: https://papi-franku.herokuapp.com/api/quotes/35
 
 ```json
 [
-    {
-        "id": 35,
-        "author": "Filthy Frank",
-        "quote": "Ravioli, Ravioli, what's in the pocket-oli?"
-    }
+  {
+    "id": 35,
+    "author": "Filthy Frank",
+    "quote": "Ravioli, Ravioli, what's in the pocket-oli?"
+  }
 ]
 ```
 
@@ -76,8 +79,8 @@ Example: https://papi-franku.herokuapp.com/api/quote
 
 ```json
 {
-    "id": 34,
-    "author": "Filthy Frank",
-    "quote": "Sometimes it's hard to open a jar, yeah, sometimes it's hard to clean the sink"
+  "id": 34,
+  "author": "Filthy Frank",
+  "quote": "Sometimes it's hard to open a jar, yeah, sometimes it's hard to clean the sink"
 }
 ```
