@@ -14,6 +14,16 @@
         margin-right: 1.5em;
         padding: 0.125rem 0.3125rem 0.0625rem;
          }
+    #wrapper {
+        
+        background-color: #f8f8f8;
+        border: 1px solid #acaaaa;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        margin-right: 1.5em;
+        padding: 0.125rem 0.3125rem 0.0625rem;
+        max-width: 650px;
+         }
 
 </style>
 
@@ -73,6 +83,16 @@ Get random quote
 /quote
 ```
 
+<div id="wrapper">
+<div id="quote"> 
+</div> 
+<div id="author"> 
+</div> 
+</div>
+<button id="random-quote" type="button"> 
+        Get random quote!  
+</button>
+
 Example: https://papi-franku.herokuapp.com/api/quote
 
 ```json
@@ -82,3 +102,22 @@ Example: https://papi-franku.herokuapp.com/api/quote
   "quote": "Sometimes it's hard to open a jar, yeah, sometimes it's hard to clean the sink"
 }
 ```
+
+<script>
+const randomQuote = document.querySelector("#random-quote");
+const quote = document.querySelector("#quote");
+const author = document.querySelector("#author");
+
+quote.innerHTML = "Sometimes it's hard to open a jar, yeah, sometimes it's hard to clean the sink"
+author.innerHTML = "~ Filthy Frank"
+
+
+randomQuote.addEventListener("click", () => {
+    fetch("https://papi-franku.onrender.com/api/quote")
+        .then((response) => response.json())
+        .then((data) => {
+            quote.innerHTML = data.quote;
+            author.innerHTML = `~ ${data.author}`;
+        });
+});
+</script>
