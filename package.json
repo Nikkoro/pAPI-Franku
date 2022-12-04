@@ -1,36 +1,36 @@
 {
-    "name": "papi-franku",
-    "version": "1.0.0",
-    "description": "Iconic quotes straight from the Omniverse, now avaiable through pAPI Franku!",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Nikkoro/pAPI-Franku.git"
-    },
-    "keywords": [
-        "filthy",
-        "frank",
-        "pinkguy",
-        "chinchin",
-        "wheelz",
-        "salamanderman"
-    ],
-    "author": "nikko",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Nikkoro/pAPI-Franku/issues"
-    },
-    "homepage": "https://github.com/Nikkoro/pAPI-Franku#readme",
-    "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.17.3",
-        "showdown": "^2.0.1"
-    },
-    "engines": {
-        "node": "16.14.0"
-    }
+  "name": "papi-franku",
+  "version": "1.0.0",
+  "description": "Iconic quotes straight from the Omniverse, now avaiable through pAPI Franku!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikkoro/pAPI-Franku.git"
+  },
+  "keywords": [
+    "filthy",
+    "frank",
+    "pinkguy",
+    "chinchin",
+    "wheelz",
+    "salamanderman"
+  ],
+  "author": "nikko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikkoro/pAPI-Franku/issues"
+  },
+  "homepage": "https://github.com/Nikkoro/pAPI-Franku#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "showdown": "^2.0.1"
+  },
+  "engines": {
+    "node": "14.x"
+  }
 }
