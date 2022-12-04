@@ -15,7 +15,6 @@
         padding: 0.125rem 0.3125rem 0.0625rem;
          }
 
-}
 </style>
 
 # pAPI-Franku
