@@ -6,7 +6,7 @@ const corsSettings = {
   optionsSuccessStatus: 200,
 };
 const app = express();
-const importData = require("../quotes.json");
+const importData = require("./quotes.json");
 const fs = require("fs");
 const showdown = require("showdown");
 let port = process.env.PORT || 3000;
