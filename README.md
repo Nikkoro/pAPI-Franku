@@ -1,6 +1,7 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
     body {
-        font-family: 'Courier New', monospace;
+        font-family: 'Roboto Mono', monospace;
         max-width: max-content;
         margin: auto;
     }
