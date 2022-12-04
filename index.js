@@ -14,6 +14,7 @@ let port = process.env.PORT || 3000;
 app.use(cors(corsSettings));
 
 app.get("/", (req, res) => {
+  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
   const str = fs.readFileSync("README.md", "utf8");
   converter = new showdown.Converter();
   const result = converter.makeHtml(str);
