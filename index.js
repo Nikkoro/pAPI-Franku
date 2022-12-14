@@ -43,7 +43,6 @@ app.get("/api/quotes/author/:author", (req, res) => {
 app.get("/api/quote", (req, res) => {
   const randomQuote =
     importData.results[Math.round(Math.random() * importData.results.length)];
-  console.log(`length ${importData.results.length}`);
   res.send(randomQuote);
 });
 
